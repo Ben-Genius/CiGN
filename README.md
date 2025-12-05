@@ -1,6 +1,9 @@
 # CiGN - Gun Tracking SaaS
 
+
 CiGN is a comprehensive Gun Tracking SaaS application designed to streamline the management of firearm licenses, dealer registrations, and compliance reporting. It provides a secure and efficient platform for administrators, renewal users, and gun dealers to manage their respective workflows.
+
+**Live Demo:** [https://Ben-Genius.github.io/CiGN/](https://Ben-Genius.github.io/CiGN/)
 
 ## Features
 

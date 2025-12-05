@@ -140,7 +140,7 @@ export default function Dashboard() {
       </div>
 
       {/* Main Content Card */}
-      <div className="rounded-xl border-[0.5px] border-[#D9D9D9] bg-white shadow-sm px-10">
+      <div className="rounded-xl border-[0.5px] border-[#D9D9D9] bg-white shadow-sm px-4 sm:px-6 lg:px-10">
         {/* Header */}
         <div className=" py-5">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between w-full">
@@ -166,7 +166,7 @@ export default function Dashboard() {
                 </button>
 
                 {isFilterOpen && (
-                  <div className="absolute right-0 top-full mt-2 w-[30rem]  rounded-xl border border-gray-100 bg-white p-5 shadow-lg z-50">
+                  <div className="absolute right-0 top-full mt-2 w-full sm:w-[30rem] min-w-[280px] rounded-xl border border-gray-100 bg-white p-5 shadow-lg z-50">
                     <div className="space-y-4">
                       {/* Status */}
                       <div className="space-y-1.5 pb-4">

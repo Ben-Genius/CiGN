@@ -335,7 +335,7 @@ export default function DealerRegistration() {
       </div>
 
       {/* Right Content */}
-      <div className="flex w-full flex-col items-center bg-white p-8 lg:w-2/3 min-h-screen">
+      <div className="flex w-full flex-col items-center bg-white p-4 sm:p-6 lg:p-8 lg:w-2/3 min-h-screen">
         <div className={`flex h-full w-full max-w-lg lg:max-w-3xl ${currentStep >= 1 ? 'max-w-full lg:max-w-3xl' : 'max-w-lg'} flex-col`}>
           
           <div className="my-auto w-full">
@@ -353,7 +353,7 @@ export default function DealerRegistration() {
             {/* Step 0: Company Details */}
             {currentStep === 0 && (
               <div className="space-y-8">
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="mb-2 block text-sm font-medium text-gray-700">Company Name</label>
                     <input
@@ -376,7 +376,7 @@ export default function DealerRegistration() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="mb-2 block text-sm font-medium text-gray-700">Location</label>
                     <input
@@ -539,7 +539,7 @@ export default function DealerRegistration() {
 
                 {operationType === 'import' && (
                   <div className="space-y-6 animate-in fade-in slide-in-from-top-2 duration-300">
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
                         <label className="mb-2 block text-sm font-medium text-gray-700">Total Fee</label>
                         <input

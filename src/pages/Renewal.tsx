@@ -328,13 +328,12 @@ export default function Renewal() {
       {[...Array(8)].map((_, i) => (
         <div
           key={i}
-          className="absolute top-1/2 left-1/2 w-3 h-3 bg-amber-400 rounded-full"
-          style={{
-            transform: `rotate(${i * 45}deg) translateX(80px)`,
-          }}
           // @ts-ignore – Tailwind supports arbitrary values
           className={`animate-ping absolute top-1/2 left-1/2 w-3 h-3 bg-amber-400 rounded-full origin-center`}
-          style={{ animationDelay: `${i * 0.05}s` }}
+          style={{
+            transform: `rotate(${i * 45}deg) translateX(80px)`,
+            animationDelay: `${i * 0.05}s`
+          }}
         />
       ))}
     </div>
@@ -410,7 +409,7 @@ export default function Renewal() {
       </div>
 
       {/* Right Content */}
-      <div className="flex w-full flex-col items-center bg-white p-8 lg:w-2/3 min-h-screen ">
+      <div className="flex w-full flex-col items-center bg-white p-4 sm:p-6 lg:p-8 lg:w-2/3 min-h-screen ">
         <div className={`flex h-full w-full max-w-lg ${currentStep === 1 ? 'max-w-full lg:max-w-3xl' : currentStep === 2 ? 'max-w-full lg:max-w-3xl' : 'max-w-lg'}  flex-col`}>
           
           <div className="my-auto w-full">
@@ -491,7 +490,7 @@ export default function Renewal() {
             {/* Step 2: Identity Verification */}
             {currentStep === 1 && (
               <div className="space-y-8 w-full">
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="mb-2 block text-sm font-medium text-gray-700">Ghana Card Number</label>
                     <input
@@ -558,7 +557,7 @@ export default function Renewal() {
                   errors={errors}
                 />
 
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="mb-2 block text-sm font-medium text-gray-700">Address</label>
                     <input
@@ -681,7 +680,7 @@ export default function Renewal() {
                       {errors.cardNumber && <p className="mt-1 text-sm text-red-500">{errors.cardNumber.message}</p>}
                     </div>
 
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
                         <label className="mb-2 block text-sm font-medium text-gray-700">Expiry Date</label>
                         <input

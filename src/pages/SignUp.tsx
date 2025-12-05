@@ -45,7 +45,7 @@ export default function SignUp() {
   return (
     <div className="flex min-h-screen w-full">
       {/* Left Side - Form */}
-      <div className="flex w-full flex-col justify-center bg-white px-8 md:w-1/2 lg:px-24 max-w-2xl mx-auto">
+      <div className="flex w-full flex-col justify-center bg-white px-6 sm:px-8 md:w-1/2 lg:px-24 max-w-2xl mx-auto">
         <div className="mb-8">
           <h1 className="mb-2 text-3xl font-semibold text-gray-900">Create an account</h1>
           <p className="text-gray-500 max-w-xs">Please enter your details to sign up</p>

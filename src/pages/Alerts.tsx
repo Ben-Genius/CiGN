@@ -52,7 +52,7 @@ export default function Alerts() {
 
   return (
     <Layout>
-      <div className="rounded-xl bg-white p-8 shadow-sm min-h-[80vh]">
+      <div className="rounded-xl bg-white p-4 sm:p-6 lg:p-8 shadow-sm min-h-[80vh]">
         {/* Header */}
         <div className="mb-8 flex items-center justify-between">
           <h1 className="text-xl font-bold text-gray-900">Alerts & Reporting</h1>
@@ -111,7 +111,7 @@ export default function Alerts() {
                     </p>
                     
                     {/* Actions */}
-                    <div className="flex items-center gap-3">
+                    <div className="flex flex-wrap items-center gap-3">
                       {alert.status === 'pending' ? (
                         <>
                           <button className="rounded-md bg-[#9D7000] px-6 py-1.5 text-sm font-medium text-white hover:bg-[#8A6200]">
